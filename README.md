@@ -1,16 +1,42 @@
-# React + Vite
+# Nested Form Assignment
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a dynamic nested form built using React.  
+Users can create questions, add child questions recursively, delete them, and view the submitted form structure in a hierarchical format.
 
-Currently, two official plugins are available:
+The main goal of this project was to understand and implement:
+- recursive components
+- nested state management
+- dynamic form handling in React
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Add multiple parent questions
+- Support nested child questions
+- Unlimited recursive nesting
+- Automatic hierarchical numbering  
+  (Example: Q1 → Q1.1 → Q1.1.1)
+- Delete parent or child questions
+- Child questions appear conditionally for True/False answers
+- Review submitted form structure
+- Data persistence using localStorage
+- Clean and responsive UI
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+## Built With
+
+- React
+- Vite
+- JavaScript
+- CSS
+
+
+
+## Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/ruchigupta22/nested-form-assignment.git
