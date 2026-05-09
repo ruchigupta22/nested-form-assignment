@@ -10,13 +10,14 @@ const QuestionItem = ({
   return (
     <div
   style={{
-    marginTop: '12px',
-    marginLeft: '20px',
-    padding: '15px',
-    border: '1px solid #ccc',
-    borderRadius: '8px',
-    backgroundColor: '#f9f9f9',
-  }}
+  marginTop: '16px',
+  marginLeft: '20px',
+  padding: '20px',
+  border: '1px solid #e5e7eb',
+  borderRadius: '14px',
+  backgroundColor: '#ffffff',
+  boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
+}}
 >
      <div style={{ fontWeight: 'bold', marginBottom: '10px' }}>
   Q{number}
@@ -197,7 +198,24 @@ function App() {
   }
 
   return (
-    <div style={{ padding: '20px', maxWidth: '800px', margin: '0 auto', fontFamily: 'Arial, sans-serif' }}>
+  <div
+    style={{
+      minHeight: '100vh',
+      padding: '40px 20px',
+      background: '#f4f7fb',
+      fontFamily: 'Arial, sans-serif',
+    }}
+  >
+    <div
+      style={{
+        maxWidth: '900px',
+        margin: '0 auto',
+        background: 'white',
+        padding: '24px',
+        borderRadius: '16px',
+        boxShadow: '0 10px 30px rgba(0, 0, 0, 0.08)',
+      }}
+    >
       <h1>Nested Form Assignment</h1>
 
      <button
@@ -236,7 +254,7 @@ function App() {
         </div>
       )}
 
-      <div style={{ marginTop: '20px' }}>
+            <div style={{ marginTop: '20px' }}>
         {questions.map((question, index) => (
           <QuestionItem
             key={question.id}
@@ -249,7 +267,8 @@ function App() {
         ))}
       </div>
     </div>
-  )
+  </div>
+)
 }
 
 export default App
